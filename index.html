@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+</head>
+
+<body>
+
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h1>
+                    <a class="navbar-brand" href="index.html"><i class="fa fa-group mr-1"
+                            aria-hidden="true"></i>创新创业工作室</a>
+                </h1>
+
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">主页 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">关于</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">联系我们</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                
+            </nav>
+        </div>
+    </header>
+
+    <section class="w3l-banner pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 banner-left">
+                    <h3 class="text-white mb-3 title">国际教育学院<br>
+                         创新创业工作室<span class="type-js"><span class="text-js">  </span></span></h3>
+                    <p class="lead text-white">指导老师：马江涛、户海波
+                        <br> 承办单位：国际教育学院
+                        <br> 地  点：东风校区--教二楼202 东五楼110
+                    </p>
+                    <div class="mt-5">
+                        <a class="btn btn-style-white" href="about.html">查看详情页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+
+    <script src="assets/js/theme-change.js"></script>
+    <script>
+        function autoType(elementClass, typingSpeed) {
+            var thhis = $(elementClass);
+            thhis.css({
+                "position": "relative",
+                "display": "inline-block"
+            });
+            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+            thhis = thhis.find(".text-js");
+            var text = thhis.text().trim().split('');
+            var amntOfChars = text.length;
+            var newString = "";
+            thhis.text("|");
+            setTimeout(function () {
+                thhis.css("opacity", 1);
+                thhis.prev().removeAttr("style");
+                thhis.text("");
+                for (var i = 0; i < amntOfChars; i++) {
+                    (function (i, char) {
+                        setTimeout(function () {
+                            newString += char;
+                            thhis.text(newString);
+                        }, i * typingSpeed);
+                    })(i + 1, text[i]);
+                }
+            }, 1500);
+        }
+
+        $(document).ready(function () {
+
+            autoType(".type-js", 200);
+        });
+    </script>
+
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+            $('.popup-with-move-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-slide-bottom'
+            });
+        });
+    </script>
+
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+
+    <script src="assets/js/counter.js"></script>
+
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+@charset "utf-8";
+/* 联想搜索开发+顶部导航调整 */
+.banner-search-form{
+    width: 270px;
+    height: 40px;
+    background: #F3F5F6;
+    border-radius: 6px;
+    overflow:visible;
+    position: relative;
+    border: 0;
+    margin-left: 45px;
+}
+.banner-search-inp {
+    width: 220px;
+    height: 40px;
+
+}
+.nav-search-box{
+    width: 320px;
+    margin-top: 2px;
+}
+.opactity_search {
+    opacity: 0;
+    display: none;
+}
+
+.search_drop {
+    background: #fff;
+    width: 270px;
+    box-shadow: 0 2px 6px 0 rgba(124, 141, 177, 0.20);
+    border-radius: 4px;
+    position: absolute; 
+    left: 0;
+    top: 42px;
+    z-index: 1;
+}
+
+.history_p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #909EAB;
+    margin-bottom: 8px;
+}
+
+.search_title {
+    font-size: 12px;
+
+}
+
+.every_p {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.remen_icon {
+    width: 11px;
+    height: 14px;
+    margin-left: 5px;
+}
+
+.search_icon {
+    width: 15px;
+    height: 15px;
+}
+
+.search_history_del {
+    margin-right: 5px;
+    background-image: url(../img/search/shanchu_icon@2x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+    width: 12px;
+    height: 13px;
+    margin-top: 1px;
+    display: inline-block;
+    float: left;
+}
+
+.history_list li a {
+    font-size: 13px;
+    color: #2F3C52;
+    padding: 9px 10px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.history_list li a:hover,
+.history_list li a:active,
+.history_list li a:focus,
+.lenovo_list li:hover,
+.lenovo_list li:active,
+.lenovo_list li:focus {
+    background: #F5F7FA;
+    color: #2F3C52;
+}
+
+.lenovo_list {
+    padding: 10px;
+}
+.search_history{
+    padding: 10px 10px 5px;
+}
+.every_search{
+    padding: 5px 10px;
+}
+.search_normal{
+    max-height: 430px;
+    overflow: hidden;
+}
+.lenovo_list li {
+    font-size: 14px;
+    color: #909EAB;
+    padding: 0 10px;
+    margin-bottom: 18px;
+    display: block;
+    cursor: pointer;
+    max-height: 54px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.lenovo_list li:first-child{
+    margin-top: 9px;
+}
+.lenovo_list li>b {
+    color: #00BFA7;
+    font-weight: normal;
+}
+
+.dis_none_i {
+    display: none;
+}
+.n-user-pn-wrap{
+    width: 46px;
+}
+.n-user-pn-wrap::after {
+    right: 0;
+    bottom: -4px;
+    content: '';
+    width: 76px;
+    height: 4px;
+    position: absolute;
+}
+.n-user-pn-wrap-tip{
+    height: 0;
+    width: 110px;
+    top:52px;
+    right: 6px;
+    left: auto;
+    border: 1px solid transparent;
+}
+
+.n-pub-btn-box{
+    width: 76px;
+height: 32px;
+background: #FFFFFF;
+border: 1px solid rgba(0,214,181,1);
+border-radius: 4px;
+font-size: 14px;
+color: #22BFA7;
+line-height: 32px;
+text-indent: 35px;
+padding: 0;
+margin-top: 6px;
+margin-right: 10px;
+}
+.n-pub-btn-box::before{
+    right: 48px;
+    top: 7px;
+    content: '';
+    background-image: url(../img/search/fabu_icon@2x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+}
+.n-pub-btn-box::after{
+    right: 0;
+    bottom: -4px;
+    content: '';
+    width: 76px;
+    height: 4px;
+    position: absolute;
+}
+.n-pub-btn-box:hover{
+    background-color: rgba(0,214,181,1) ;
+    color: #fff;
+}
+.n-pub-btn-box:hover::before{
+    background-image: url(../img/search/fabu02_icon@2x.png) ;
+    background-size: 14px;
+}
+.n-pub-tip{
+    height: 0;
+    width: 76px;
+    left: 0;
+    top: 36px;
+    
+text-indent: 0;
+font-family: MicrosoftYaHei;
+border: 1px solid transparent;
+}
+.n-pub-btn-box:hover .n-pub-tip {
+	border: 1px solid rgba(234,234,234,1);
+}
+.n-pub-tip .item{
+    margin: 0;
+    padding-left: 35px;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    background-repeat: no-repeat;
+}
+.icon1{
+    background-image: url(../img/search/wenda_icon@2x.png);
+    background-size:16px;
+    background-position: 14px center;
+}
+.icon2{
+    background-image: url(../img/search/wenzhang_icon@2x.png);
+    background-size:14px;
+    background-position: 15px center;
+}
+.icon3{
+    background-image: url(../img/search/jingsai_icon@2x.png);
+    background-size:16px;
+    background-position: 14px center;
+}
+.icon4{
+    background-image: url(../img/search/huodong_icon@2x.png);
+    background-size:16px;
+    background-position: 14px center;
+}
+.icon5{
+    background-image: url(../img/search/toupiao_icon@2x.png);
+    background-size:16px;
+    background-position: 14px center;
+}
+.n-user-pn-wrap:hover .n-user-pn-wrap-tip {
+	border:1px solid rgba(234,234,234,1);
+    height: auto;
+}
+.n-user-pn-wrap:hover .n-user-pn-wrap-tip.org {
+    height: auto;
+}
+.n-user-handle-list .item{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.n-user-pn-wrap .n-user-name{
+    max-width: 110px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.useranimate {
+    padding:0 12px;
+    font-size: 14px;
+    color: #000;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 110px;
+    -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.useranimate.act{
+    animation: 8s wordsLoop linear infinite normal;
+}
+@keyframes wordsLoop {
+    0% {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+}
+@-webkit-keyframes wordsLoop {
+    0% {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+.n-level-name{
+    font-size: 12px;
+color: #B4B4B4;
+padding: 0 12px;
+margin-bottom: 10px;
+}
+
+.userline{
+    width: 90px;
+height: 1px;
+background: #F4F4F4;
+margin: 0 auto 10px;
+}
+.search_clean{
+    cursor: pointer;
+}
+.n-user-handle-list{
+    padding-top: 8px;
+}
+.n-user-handle-list .item:before{
+    left: 12px;
+}
+.n-user-handle-list .item{
+    padding-left: 40px;
+}
+.every_list li{
+    position: relative;
+}
+.every_list li a{
+padding-left: 32px;
+}
+.every_list li span{
+    font-family: 'DINAlternate-Bold';
+    font-size: 14px;
+    color: #999999;
+    position:absolute;
+    left: 10px;
+    top: 9px;
+}
+.every_list li:nth-of-type(1) span{
+    color: #FC4946;
+}
+.every_list li:nth-of-type(2) span{
+    color: #FC8B46;
+}
+
+.every_list li:nth-of-type(3) span{
+    color: #FCB846;
+}
+.n-user-handle-list .item.teaching:before{
+    background-image: url(../img/search/icon-teaching@2x.png);
+    background-position: center;
+    background-size: 19px;
+}
+.n-user-handle-list .item.study:before{
+    background-image: url(../img/search/xuexi_icon@2x.png);
+    background-position: center;
+    background-size: 16px;
+}
+.n-user-handle-list .item.center:before{
+    background-image: url(../img/search/gerenzhongxin_icon@2x.png);
+    background-position: center;
+    background-size: 16px;
+}
+.n-user-handle-list .item.wodedingdan:before{
+    background-image: url(../img/search/wodedingdan_icon@2x.png);
+    background-position: center;
+    background-size: 16px;
+}
+.n-user-news{
+    margin: 0;
+}
+.logout, .register{
+    font-family: 'MicrosoftYaHei';
+    font-size: 14px;
+    color: #31363F;
+    font-weight: 400;
+}
+.logout span, .register span{
+    color: #C3C3C3;
+    font-weight: 200;
+    margin-left: 10px;
+    margin-right: 8px;
+}
