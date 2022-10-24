@@ -14,6 +14,8 @@ QQnum		char(10)
 Message		char(255)  
   
   
+  
+php代码中变量：  
 $host = "localhost"; 数据库地址  
 $dbname = "info";   数据库名  
 $username = "info"; 用户名  
