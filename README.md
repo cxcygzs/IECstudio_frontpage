@@ -5,9 +5,9 @@
 表中有七个字段
 
 
-realName	char(15)  	
-College		char(15)  	
-mobilePhone	char(11)  	
+realName	char(15)  
+College		char(15)  
+mobilePhone	char(11)  
 Snum		char(12) 主键  
 Major		char(20)  
 QQnum		char(10)  
