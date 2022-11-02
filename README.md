@@ -16,7 +16,7 @@ Message		char(255)
   
   
 php代码中变量：  
-$host = "localhost"; 数据库地址  
+$dbhost = "localhost"; 数据库地址  
 $dbname = "info";   数据库名  
-$username = "info"; 用户名  
-$password = "REGNAL"; 数据库密码  
+$dbusername = "info"; 用户名  
+$dbpassword = "REGNAL"; 数据库密码  
