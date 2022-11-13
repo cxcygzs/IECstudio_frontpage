@@ -20,3 +20,6 @@ $dbhost = "localhost"; 数据库地址
 $dbname = "info";   数据库名  
 $dbusername = "info"; 用户名  
 $dbpassword = "REGNAL"; 数据库密码  
+
+
+php代码中倒数第二行需要修改url地址为提交表单页面的地址才可以正确返回
